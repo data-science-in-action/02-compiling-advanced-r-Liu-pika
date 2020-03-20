@@ -1,0 +1,55 @@
+---
+title: "Problems and Solutions to Compile a PDF Version of Advanced R"
+author: "Liu Lijiao"
+date: "2020/3/20"
+output: pdf_document
+---
+
+
+During the building process,I have met many problems,the followings are the errors I've met and how I solved them.
+
+# Quitting from lines 223-235 (Introduction.Rmd)
+
+```{r eval=FALSE}
+Adding'encoding = "UTF-8"' in line 224
+```
+
+# Quitting from lines 80-81 (Names-values.Rmd) 
+
+```{r eval=FALSE}
+install.packages("lobstr")
+```
+
+# Quitting from lines 233-234 (Perf-measure.Rmd) 
+
+```{r eval=FALSE}
+install.packages("ggfortify")
+```
+
+# Missing Packages
+
+```{r eval=FALSE}
+Most of the errors are packages missing.
+```
+
+I had been installing the required packages until I met these issues:
+
+#Quitting from lines 77-84(Rcpp.Rmd)
+
+```{r eval=FALSE}
+I install Rtools to my computer.
+```
+
+# '"xelatex"' not found
+
+```{r eval=FALSE}
+I install MiKTeX and choose "Always install missing packages on-the-fly" in the process.
+```
+
+# About Font
+
+```{r eval=FALSE}
+I download the font 'inconsolata'and'andalemono'from the internet.
+```
+
+Finally,this book was successfully built by installing the required packages and searching online.
